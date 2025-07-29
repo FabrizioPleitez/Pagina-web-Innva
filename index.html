@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venta de componentes de PC de alta calidad - procesadores, memorias RAM, tarjetas gráficas y más">
+    <meta name="keywords" content="componentes PC, procesadores, RAM, tarjetas gráficas, hardware">
+    <title>Innva - Componentes de PC de Calidad</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo" onclick="showHome()">Innva</div>
+            <nav>
+                <ul>
+                    <li><a onclick="showHome()" class="nav-link" data-section="home">Inicio</a></li>
+                    <li><a onclick="showCategory('procesadores')" class="nav-link" data-section="procesadores">Procesadores</a></li>
+                    <li><a onclick="showCategory('ram')" class="nav-link" data-section="ram">Memoria RAM</a></li>
+                    <li><a onclick="showCategory('gpu')" class="nav-link" data-section="gpu">Tarjetas Gráficas</a></li>
+                    <li><a onclick="showCategory('motherboards')" class="nav-link" data-section="motherboards">Motherboards</a></li>
+                    <li><a onclick="showCategory('almacenamiento')" class="nav-link" data-section="almacenamiento">Almacenamiento</a></li>
+                    <li><a onclick="showCategory('fuentes')" class="nav-link" data-section="fuentes">Fuentes de Poder</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home-section">
+            <div class="hero">
+                <h1>Componentes PC de Alta Calidad</h1>
+                <p>Descubre nuestra amplia selección de componentes para armar o mejorar tu PC. Desde procesadores de última generación hasta tarjetas gráficas de alto rendimiento.</p>
+            </div>
+
+            <div class="categories">
+                <div class="category-card" onclick="showCategory('procesadores')">
+                    <span class="category-icon">🎯</span>
+                    <h3>Procesadores</h3>
+                    <p>AMD Ryzen e Intel Core de última generación para máximo rendimiento</p>
+                    <button class="btn">Ver Procesadores</button>
+                </div>
+
+                <div class="category-card" onclick="showCategory('ram')">
+                    <span class="category-icon">⚡</span>
+                    <h3>Memoria RAM</h3>
+                    <p>Módulos DDR4 y DDR5 de alta velocidad para gaming y productividad</p>
+                    <button class="btn">Ver Memorias</button>
+                </div>
+
+                <div class="category-card" onclick="showCategory('gpu')">
+                    <span class="category-icon">🎮</span>
+                    <h3>Tarjetas Gráficas</h3>
+                    <p>NVIDIA GeForce y AMD Radeon para gaming y trabajo profesional</p>
+                    <button class="btn">Ver Tarjetas</button>
+                </div>
+
+                <div class="category-card" onclick="showCategory('motherboards')">
+                    <span class="category-icon">🔧</span>
+                    <h3>Motherboards</h3>
+                    <p>Placas madre compatibles con los últimos procesadores</p>
+                    <button class="btn">Ver Motherboards</button>
+                </div>
+
+                <div class="category-card" onclick="showCategory('almacenamiento')">
+                    <span class="category-icon">💾</span>
+                    <h3>Almacenamiento</h3>
+                    <p>SSDs NVMe y SATA para velocidad y capacidad</p>
+                    <button class="btn">Ver Almacenamiento</button>
+                </div>
+
+                <div class="category-card" onclick="showCategory('fuentes')">
+                    <span class="category-icon">🔋</span>
+                    <h3>Fuentes de Poder</h3>
+                    <p>PSUs certificadas 80+ para alimentar tu sistema</p>
+                    <button class="btn">Ver Fuentes</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Procesadores Section -->
+        <section id="procesadores-section" class="products-section">
+            <button class="btn back-btn" onclick="showHome()">← Volver al Inicio</button>
+            <h2>Procesadores Disponibles</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🎯</div>
+                    <h4>AMD Ryzen 5 5600X</h4>
+                    <div class="product-price">$199.99</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>6 núcleos, 12 hilos</li>
+                            <li>Frecuencia base: 3.7GHz</li>
+                            <li>Frecuencia turbo: 4.6GHz</li>
+                            <li>Socket AM4</li>
+                            <li>TDP: 65W</li>
+                        </ul>
+                    </div>
+                    <p>Excelente rendimiento para gaming y tareas intensas</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🎯</div>
+                    <h4>Intel Core i5-12400F</h4>
+                    <div class="product-price">$179.99</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>6 núcleos, 12 hilos</li>
+                            <li>Frecuencia base: 2.5GHz</li>
+                            <li>Frecuencia turbo: 4.4GHz</li>
+                            <li>Socket LGA1700</li>
+                            <li>TDP: 65W</li>
+                        </ul>
+                    </div>
+                    <p>Procesador ideal para gaming y productividad</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🎯</div>
+                    <h4>AMD Ryzen 7 5800X3D</h4>
+                    <div class="product-price">$329.99</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>8 núcleos, 16 hilos</li>
+                            <li>Frecuencia base: 3.4GHz</li>
+                            <li>Frecuencia turbo: 4.5GHz</li>
+                            <li>Cache 3D: 96MB</li>
+                            <li>Socket AM4</li>
+                        </ul>
+                    </div>
+                    <p>El mejor procesador para gaming con tecnología 3D V-Cache</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RAM Section -->
+        <section id="ram-section" class="products-section">
+            <button class="btn back-btn" onclick="showHome()">← Volver al Inicio</button>
+            <h2>Memoria RAM Disponible</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">⚡</div>
+                    <h4>Corsair Vengeance LPX 16GB</h4>
+                    <div class="product-price">$79.99</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>16GB (2x8GB)</li>
+                            <li>DDR4-3200</li>
+                            <li>CL16-18-18-36</li>
+                            <li>1.35V</li>
+                            <li>Perfil XMP 2.0</li>
+                        </ul>
+                    </div>
+                    <p>Memoria de alto rendimiento para gaming</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">⚡</div>
+                    <h4>G.Skill Trident Z RGB 32GB</h4>
+                    <div class="product-price">$149.99</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>32GB (2x16GB)</li>
+                            <li>DDR4-3600</li>
+                            <li>CL16-16-16-36</li>
+                            <li>1.35V</li>
+                            <li>RGB Lighting</li>
+                        </ul>
+                    </div>
+                    <p>Memoria premium con iluminación RGB</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">⚡</div>
+                    <h4>Kingston Fury Beast 16GB</h4>
+                    <div class="product-price">$89.99</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>16GB (2x8GB)</li>
+                            <li>DDR5-5600</li>
+                            <li>CL36-36-36-72</li>
+                            <li>1.25V</li>
+                            <li>Intel XMP 3.0</li>
+                        </ul>
+                    </div>
+                    <p>Memoria DDR5 de nueva generación</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GPU Section -->
+        <section id="gpu-section" class="products-section">
+            <button class="btn back-btn" onclick="showHome()">← Volver al Inicio</button>
+            <h2>Tarjetas Gráficas Disponibles</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🎮</div>
+                    <h4>Sapphire Pulse AMD Radeon RX 9060 XT</h4>
+                    <p class="product-price">$349.00</p>
+                    <p>Best Graphics Card for Mainstream Gaming at 1080p (AMD)</p>
+                    <p><strong>Chip:</strong> AMD Radeon RX 9060 XT (16GB)</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🎮</div>
+                    <h4>Asus Dual Nvidia GeForce RTX 4060 OC Edition</h4>
+                    <p class="product-price">$339.99 <span style="text-decoration: line-through; color: gray;">$375.99</span></p>
+                    <p>Best Graphics Card for Mainstream Gaming at 1080p (Nvidia)</p>
+                    <p><strong>Chip:</strong> Nvidia GeForce RTX 4060</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🎮</div>
+                    <h4>Intel Arc B580 Limited Edition</h4>
+                    <p class="product-price">$319.43 <span style="text-decoration: line-through; color: gray;">$369.95</span></p>
+                    <p>Best Graphics Card for High-Refresh Gaming at 1080p</p>
+                    <p><strong>Chip:</strong> Intel Arc B580</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🎮</div>
+                    <h4>PNY GeForce RTX 5060 Ti 16GB OC Dual Fan</h4>
+                    <p class="product-price">$499.99 <span style="text-decoration: line-through; color: gray;">$549.99</span></p>
+                    <p>Best Graphics Card for Mainstream Gaming at 1440p</p>
+                    <p><strong>Chip:</strong> Nvidia GeForce RTX 5060 Ti (16GB)</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🎮</div>
+                    <h4>Sapphire Pulse AMD Radeon RX 9070</h4>
+                    <p class="product-price">$669.99</p>
+                    <p>Best Graphics Card for High-Refresh Gaming at 1440p (AMD)</p>
+                    <p><strong>Chip:</strong> AMD Radeon RX 9070</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motherboards Section -->
+        <section id="motherboards-section" class="products-section">
+            <button class="btn back-btn" onclick="showHome()">← Volver al Inicio</button>
+            <h2>Motherboards Disponibles</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🔧</div>
+                    <h4>ASUS ROG Strix B650E-E Gaming WiFi</h4>
+                    <p class="product-price">$329.99</p>
+                    <p>Best Overall Motherboard for AMD AM5</p>
+                    <p><strong>Socket:</strong> AM5 | <strong>Chipset:</strong> B650E</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🔧</div>
+                    <h4>MSI MAG B760 Tomahawk WiFi</h4>
+                    <p class="product-price">$189.99 <span style="text-decoration: line-through; color: gray;">$219.99</span></p>
+                    <p>Best Overall Motherboard for Intel LGA1700</p>
+                    <p><strong>Socket:</strong> LGA1700 | <strong>Chipset:</strong> B760</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🔧</div>
+                    <h4>Gigabyte B650M AORUS Elite AX</h4>
+                    <p class="product-price">$179.99</p>
+                    <p>Best Budget Motherboard for AMD AM5</p>
+                    <p><strong>Socket:</strong> AM5 | <strong>Chipset:</strong> B650</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🔧</div>
+                    <h4>ASRock Z790 Pro RS WiFi</h4>
+                    <p class="product-price">$199.99 <span style="text-decoration: line-through; color: gray;">$229.99</span></p>
+                    <p>Best Budget Motherboard for Intel LGA1700</p>
+                    <p><strong>Socket:</strong> LGA1700 | <strong>Chipset:</strong> Z790</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🔧</div>
+                    <h4>ASUS ROG Strix Z790-E Gaming WiFi</h4>
+                    <p class="product-price">$449.99</p>
+                    <p>Premium Motherboard with RGB and WiFi 6E</p>
+                    <p><strong>Socket:</strong> LGA1700 | <strong>Chipset:</strong> Z790</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Almacenamiento Section -->
+        <section id="almacenamiento-section" class="products-section">
+            <button class="btn back-btn" onclick="showHome()">← Volver al Inicio</button>
+            <h2>Almacenamiento Disponible</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">💾</div>
+                    <h4>Samsung 990 PRO 2TB</h4>
+                    <p class="product-price">$199.99 <span style="text-decoration: line-through; color: gray;">$249.99</span></p>
+                    <p>Best Overall SSD for Gaming and Content Creation</p>
+                    <p><strong>Interface:</strong> PCIe 4.0 M.2 | <strong>Speed:</strong> 7,450 MB/s</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">💾</div>
+                    <h4>WD Black SN850X 1TB</h4>
+                    <p class="product-price">$129.99</p>
+                    <p>Best Gaming SSD with Game Mode 2.0</p>
+                    <p><strong>Interface:</strong> PCIe 4.0 M.2 | <strong>Speed:</strong> 7,300 MB/s</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">💾</div>
+                    <h4>Crucial MX4 1TB SATA</h4>
+                    <p class="product-price">$79.99 <span style="text-decoration: line-through; color: gray;">$99.99</span></p>
+                    <p>Best Budget SATA SSD</p>
+                    <p><strong>Interface:</strong> SATA III 2.5" | <strong>Speed:</strong> 560 MB/s</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">💾</div>
+                    <h4>Kingston NV3 500GB</h4>
+                    <p class="product-price">$49.99</p>
+                    <p>Best Budget NVMe SSD for Basic Builds</p>
+                    <p><strong>Interface:</strong> PCIe 3.0 M.2 | <strong>Speed:</strong> 6,000 MB/s</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">💾</div>
+                    <h4>Seagate FireCuda 530 2TB</h4>
+                    <p class="product-price">$299.99</p>
+                    <p>High-Performance SSD with Heatsink</p>
+                    <p><strong>Interface:</strong> PCIe 4.0 M.2 | <strong>Speed:</strong> 7,300 MB/s</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fuentes Section -->
+        <section id="fuentes-section" class="products-section">
+            <button class="btn back-btn" onclick="showHome()">← Volver al Inicio</button>
+            <h2>Fuentes de Poder Disponibles</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🔋</div>
+                    <h4>Corsair RM850x 850W</h4>
+                    <p class="product-price">$149.99 <span style="text-decoration: line-through; color: gray;">$179.99</span></p>
+                    <p>Best Overall PSU for High-Performance Builds</p>
+                    <p><strong>Efficiency:</strong> 80+ Gold | <strong>Modular:</strong> Fully Modular</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🔋</div>
+                    <h4>EVGA SuperNOVA 750 G6</h4>
+                    <p class="product-price">$119.99</p>
+                    <p>Best Value PSU for Gaming Systems</p>
+                    <p><strong>Efficiency:</strong> 80+ Gold | <strong>Modular:</strong> Fully Modular</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🔋</div>
+                    <h4>Seasonic Focus GX-650</h4>
+                    <p class="product-price">$99.99 <span style="text-decoration: line-through; color: gray;">$119.99</span></p>
+                    <p>Best Budget PSU with Gold Efficiency</p>
+                    <p><strong>Efficiency:</strong> 80+ Gold | <strong>Modular:</strong> Fully Modular</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🔋</div>
+                    <h4>be quiet! Straight Power 11 750W</h4>
+                    <p class="product-price">$129.99</p>
+                    <p>Ultra Quiet PSU for Silent Builds</p>
+                    <p><strong>Efficiency:</strong> 80+ Gold | <strong>Modular:</strong> Fully Modular</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🔋</div>
+                    <h4>Thermaltake Smart 600W</h4>
+                    <p class="product-price">$59.99</p>
+                    <p>Budget PSU for Entry-Level Builds</p>
+                    <p><strong>Efficiency:</strong> 80+ White | <strong>Modular:</strong> Non-Modular</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">Acerca de</a>
+                <a href="#contact">Contacto</a>
+                <a href="#support">Soporte</a>
+                <a href="#warranty">Garantía</a>
+                <a href="#shipping">Envíos</a>
+            </div>
+            <p>&copy; 2025 Innva Store. Proyecto Universitario - Todos los derechos reservados.</p>
+            <p>Especialistas en componentes de PC de alta calidad</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
